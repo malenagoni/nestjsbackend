@@ -2,8 +2,8 @@
 
 Endpoints: 
 
-/auth/login
-/auth/register
-/api/me
-/api/upload
-/public/images/{userId}
+<p>/auth/login</p>
+<p>/auth/register</p>
+<p>/api/me</p>
+<p>/api/upload</p>
+<p>/public/images/{userId}</p>
