@@ -1,4 +1,6 @@
 # nestjsbackend
+Technologies: 
+<p>NestJS, PostgreSQL, Passport, JWT</p>
 
 Endpoints: 
 
