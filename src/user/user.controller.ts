@@ -12,17 +12,17 @@ import { AuthGuard } from '@nestjs/passport';
 import { UserEntity } from 'src/entities/user.entity';
 import { UpdateUserDTO } from 'src/models/user.model';
 
-@Controller('user')
+@Controller('api')
 export class UserController {
   constructor(private userService: UserService) {}
 
-  @Get()
+  @Get('/me')
   @UseGuards(AuthGuard())
   findCurrentUser(@User() { username }: UserEntity) {
     return this.userService.findByUsername(username);
   }
 
-  @Put()
+  @Put('/upload')
   @UseGuards(AuthGuard())
   update(
     @User() { username }: UserEntity,
